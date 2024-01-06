@@ -177,14 +177,9 @@ https://unicode.org/charts/
     }
   }
  */
- 
+
 @media (max-width: 560px) {
 	.slider-item-content {
-	  position: absolute;
-	  bottom: 40px;
-	  padding: 30px 40px;	
-	  background-color: rgba(0,0,0,.1);
-	  color: var(--white-200);
 	  font-size: 15px;  
 	}
 }
