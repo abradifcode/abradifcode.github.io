@@ -160,8 +160,7 @@ h2.subtitle {
 
 /* МЕДИАЗАПРОСЫ */
 
-/* контрольная точка 35em=560px */
-@media (min-width: 35em) {
+@media (min-width: 560px) {
     .menu-toggle {
         display: none;
     }
@@ -216,9 +215,7 @@ h2.subtitle {
     }
 }
 
-
-/* 50em * 16px = 800px */
-@media (min-width: 50em) {
+@media (min-width: 1024px) {
     :root {
         font-size: 1.125em;
     }

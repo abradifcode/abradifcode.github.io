@@ -164,3 +164,28 @@ https://unicode.org/charts/
   background-color: rgba(0,0,0,.1);
   color: var(--white-200);
 }
+
+/* Responsive breakpoints Swiper 
+  breakpoints: {
+    560: {
+      slidesPerView: 1.25,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    }
+  }
+ */
+ 
+@media (max-width: 560px) {
+	.slider-item-content {
+	  position: absolute;
+	  bottom: 40px;
+	  padding: 30px 40px;	
+	  background-color: rgba(0,0,0,.1);
+	  color: var(--white-200);
+	  font-size: 15px;  
+	}
+}
+

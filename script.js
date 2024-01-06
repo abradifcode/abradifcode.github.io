@@ -32,7 +32,7 @@ const swiper = new Swiper(".swiper-slider", {
 
   // Responsive breakpoints
   breakpoints: {
-    640: {
+    560: {
       slidesPerView: 1.25,
       spaceBetween: 20
     },
