@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nature-page-Swiper</title>
+  <title>Nature-page-2-Swiper</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <!-- font-awesome -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
 
-<!-- Стили swiper-responsive-slider-carousel -->
+  <!-- Стили swiper-responsive-slider-carousel -->
   <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="nature-page.css">
@@ -25,7 +25,7 @@
         <h1>Природные ландшафты</h1>
         <div class="slogan">Мы любим фотографировать</div>
       </div>
-      
+
     </header>
   </section>
 
@@ -46,8 +46,30 @@
 
   <!-- фото -->
   <aside id="hero" class="hero">
-    Velit modi blanditiis minima aliquam suscipit possimus laborum tempora iure similique et non enim accusantium, unde
-    soluta deleniti.
+    <!-- Velit modi blanditiis minima aliquam suscipit possimus laborum tempora iure similique et non enim accusantium, unde soluta deleniti. -->
+
+    <!-- Swiper-11-Autoplay -->
+    <div class="swiper mySwiper3">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/3000x800-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/3000x800-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/3000x800-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/3000x800-5.jpg" />
+        </div>     
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
   </aside>
 
   <section class="container">
@@ -76,42 +98,41 @@
           </p>
         </section>
       </div>
-    </main>
+    </main>  
+  </section>
 
-    <!--Start Swiper carousel from index-card.html -->
-    <div class="container slider-column">
-      <div class="swiper swiper-slider">
-        <div class="swiper-wrapper">
-          
-          <!-- Card 1 -->
-          <div class="slider-item swiper-slide">
-            <div class="slider-image-wrapper">
-              <img class="slider-image" src="img/img-1.jpg">
-            </div>
-            <div class="slider-item-content">
-              <h1>Card 1</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            </div>
+   <!--Start Swiper carousel from index-card.html -->
+   <div class="container slider-column">
+    <div class="swiper swiper-slider">
+      <div class="swiper-wrapper">
+
+        <!-- Card 1 -->
+        <div class="slider-item swiper-slide">
+          <div class="slider-image-wrapper">
+            <img class="slider-image" src="img/img-1.jpg">
           </div>
-
-          <img class="swiper-slide" src="img/img-2.jpg">
-          <img class="swiper-slide" src="img/img-3.jpg">
-          <img class="swiper-slide" src="img/img-4.jpg">
-          <img class="swiper-slide" src="img/img-5.jpg">
-          <img class="swiper-slide" src="img/img-6.jpg">
+          <div class="slider-item-content">
+            <h1>Card 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+          </div>
         </div>
 
-        <span class="swiper-pagination"></span>
-
-        <span class="swiper-button-prev"></span>
-        <span class="swiper-button-next"></span>
-
+        <img class="swiper-slide" src="img/img-2.jpg">
+        <img class="swiper-slide" src="img/img-3.jpg">
+        <img class="swiper-slide" src="img/img-4.jpg">
+        <img class="swiper-slide" src="img/img-5.jpg">
+        <img class="swiper-slide" src="img/img-6.jpg">
       </div>
-    </div>
-     <!--End Swiper carousel from index-card.html -->
-    
 
-  </section>
+      <span class="swiper-pagination"></span>
+
+      <span class="swiper-button-prev"></span>
+      <span class="swiper-button-next"></span>
+
+    </div>
+  </div>
+  <!--End Swiper carousel from index-card.html -->
+
 
   <footer>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
@@ -129,10 +150,10 @@
     })();
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Инициализация swiper -->
-<script src="script.js"></script>
+  <!-- Инициализация swiper -->
+  <script src="script.js"></script>
 
 </body>
 

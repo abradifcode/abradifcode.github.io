@@ -42,3 +42,22 @@ const swiper = new Swiper(".swiper-slider", {
     }
   }
 });
+
+// Инициализация  слайдера в hero
+ //Swiper-11-Autoplay
+ var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 30,
+  effect: "fade",
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
