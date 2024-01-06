@@ -160,7 +160,7 @@ https://unicode.org/charts/
 .slider-item-content {
   position: absolute;
   bottom: 40px;
-  padding: 30px 40px;
+  padding: 30px 50px;
   background-color: rgba(0,0,0,.1);
   color: var(--white-200);
 }
