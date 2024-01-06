@@ -1,0 +1,251 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+/* Links */
+a:link {
+    color: #4962D6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4962D6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #b81414;
+}
+
+/* Header */
+.page-header {
+    padding: 0.4em 1em;
+    background-color: #fff;
+}
+
+.title > h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: .2em 0;
+    color: #006363;
+}
+
+.slogan {
+    color: #555;
+    font-size: 0.875em;
+    margin: 0;
+}
+
+/*  Hero image */
+.hero {
+    padding: 2em 1em;
+    text-align: center;
+    background-image: url(img/lake_small_560.jpg);
+    background-size: 100%;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.3em #006363;
+}
+
+/*  Main section */
+main {
+    padding: 1em;
+}
+
+h2.subtitle {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #006363;
+}
+
+/* Мобильное меню ================================= */
+.menu {
+    position: relative;    /* для позиционирования внутренних элементов */
+}
+
+.menu-toggle {
+    position: absolute;
+    top: -1.2em;         /* кнопка - за пределы контейнера */
+    right: 0.1em;
+
+    border: 0;           /* переопределение стилей кнопок отбраузера */
+    background-color: transparent; 
+
+    font-size: 3em;
+    width: 1em;         /* определение размера кнопки */
+    height: 1em;
+
+    line-height: 0.4;
+    text-indent: 5em;   /* скрывают текст кнопки-пере­ключателя */
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-toggle::after {
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+
+    display: block;
+    content: "\2261";
+    /* символ "гамбургер-меню" из табл Юникода https://www.toptal.com/designers/htmlarrows/math/identical-to/ */
+
+    text-indent: 0;
+    /* символ в поле зрения */
+
+    color: #006363;
+}
+
+.menu-dropdown {
+    display: none; 
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+/* Отображает раскрывающееся меню при добавлении в меню класса is-open */
+.menu.is-open .menu-dropdown {
+    display: block;
+}
+/* =================================  */
+
+/* Nav menu */
+.nav-menu {
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+    background-color: #006363;
+    color: #fff;
+}
+
+.nav-menu > li + li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+    display: block;
+    padding: 0.8em 1em;
+    color: #fff;
+    font-weight: normal;
+}
+/* t-7 */
+.nav-menu > li > a:hover {
+    background-color: #079191;
+}
+
+/* МЕДИАЗАПРОСЫ */
+
+/* контрольная точка 35em=560px */
+@media (min-width: 35em) {
+    .menu-toggle {
+        display: none;
+    }
+    .menu-dropdown {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        border: 0;
+        padding: 0 1em;
+    }
+    .nav-menu > li {
+        flex: 1;
+    }
+    .nav-menu > li + li {
+        border: 0;
+    }
+    .nav-menu>li>a {
+        padding: 0.3em;
+        text-align: center;
+    }
+
+/* Main columns */
+    .row {
+        display: flex;
+        margin-left: -.75em;
+        margin-right: -.75em;
+    }
+    .column {
+        flex: 1;
+        margin-right: 0.75em;
+        margin-left: 0.75em;
+    }
+
+    .title > h1 {
+        font-size: 2.25rem;
+    }
+
+    .page-header {
+        padding: 1em;
+    }
+
+    .hero {
+        padding: 5em 3em;
+        font-size: 1.2rem;
+        background-image: url(img/lake_medium_800.jpg);
+    }
+    main {
+        padding: 2em 1em;
+    }
+}
+
+
+/* 50em * 16px = 800px */
+@media (min-width: 50em) {
+    :root {
+        font-size: 1.125em;
+    }
+
+    .nav-menu {
+        padding: 0 4em;
+    }
+
+    .page-header {
+        padding: 1em 4em;
+    }
+
+    .hero {
+        padding: 7em 6em;
+        background-image: url(img/lake_1280.jpg);
+    }
+
+    main {
+        padding: 2em 4em;
+    }
+}
+
+/* t-7 */
+footer {
+    margin-top: 2em;
+    padding: 2em 4em;
+    background-color: #006363;
+    background-color: #187abe;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature-page-Swiper</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<!-- Стили swiper-responsive-slider-carousel -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="nature-page.css">
+</head>
+
+<body>
+  <section class="container">
+    <header id="header" class="page-header">
+
+      <div class="title">
+        <h1>Природные ландшафты</h1>
+        <div class="slogan">Мы любим фотографировать</div>
+      </div>
+      
+    </header>
+  </section>
+
+  <nav class="menu" id="main-menu">
+
+    <!-- Добавляет символ-«гамбургер» для мобильного меню -->
+    <button class="menu-toggle" id="toggle-menu">toggle menu</button>
+
+    <div class="menu-dropdown">
+      <ul class="nav-menu">
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- фото -->
+  <aside id="hero" class="hero">
+    Velit modi blanditiis minima aliquam suscipit possimus laborum tempora iure similique et non enim accusantium, unde
+    soluta deleniti.
+  </aside>
+
+  <section class="container">
+    <main id="main">
+
+      <div class="row">
+
+        <section class="column">
+          <h2 class="subtitle">Новости</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, architecto optio? Eos obcaecati doloremque
+            repellendus nemo <a href="#">laborum officiis</a> aliquam ipsam, consequuntur rem optio quibusdam esse
+            ducimus
+            quaerat.</p>
+        </section>
+
+        <section class="column">
+          <h2 class="subtitle">Выставки</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum, <a href="#">aperiam labore</a> nam
+            rem iste consequuntur dolor in, odio hic et, optio commodi impedit sapiente adipisci! </p>
+        </section>
+
+        <section class="column">
+          <h2 class="subtitle">Сервисы</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit molestiae nobis quos ducimus sunt
+            hic blanditiis non fuga, <a href="#">dignissimos adipisci</a>, ad aut totam porro dolore illum architecto.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!--Start Swiper carousel from index-card.html -->
+    <div class="container slider-column">
+      <div class="swiper swiper-slider">
+        <div class="swiper-wrapper">
+          
+          <!-- Card 1 -->
+          <div class="slider-item swiper-slide">
+            <div class="slider-image-wrapper">
+              <img class="slider-image" src="img/img-1.jpg">
+            </div>
+            <div class="slider-item-content">
+              <h1>Card 1</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+          </div>
+
+          <img class="swiper-slide" src="img/img-2.jpg">
+          <img class="swiper-slide" src="img/img-3.jpg">
+          <img class="swiper-slide" src="img/img-4.jpg">
+          <img class="swiper-slide" src="img/img-5.jpg">
+          <img class="swiper-slide" src="img/img-6.jpg">
+        </div>
+
+        <span class="swiper-pagination"></span>
+
+        <span class="swiper-button-prev"></span>
+        <span class="swiper-button-next"></span>
+
+      </div>
+    </div>
+     <!--End Swiper carousel from index-card.html -->
+    
+
+  </section>
+
+  <footer>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+  </footer>
+
+  <!--скрипт для работы мобильного меню при нажатии -->
+  <script type="text/javascript">
+    (function () {
+      var menuButton = document.getElementById('toggle-menu');
+      menuButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        var menu = document.getElementById('main-menu');
+        menu.classList.toggle('is-open');
+      });
+    })();
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Инициализация swiper -->
+<script src="script.js"></script>
+
+</body>
+
+</html>
